@@ -21,7 +21,7 @@ export const APIRequest = async (arg: LoginData) => {
                     'Authorization': 'Bearer RLPUUOQAMIKSAB2PSGUECA'
                 }
             })
-        return response.data
+        return response.data.uuid
     } catch (e) {
         const error = e as AxiosError
         if (error.response?.data) {
